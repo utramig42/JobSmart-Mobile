@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalhes do Produto</ion-title>
+    <ion-buttons slot="end">
+      <button (click)="closeModal()">Fechar</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-card-subtitle>{{product.marca}}</ion-card-subtitle>
+      <ion-card-title>{{product.produto}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p> <b> Observação: </b>{{product.observacao}}</p>
+      <p> <b> Quantidade em estoque: </b>{{product.qtdAtual}}</p>
+      <p> <b> Quantidade mínima permitida: </b>{{product.qtdMin}}</p>
+      <p> <b> Valor de Venda: </b>{{product.vlrVenda | currency: 'BRL':'symbol'}}</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

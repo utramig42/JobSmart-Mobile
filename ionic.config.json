@@ -1,0 +1,7 @@
+{
+  "name": "JobSmart-Mobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
